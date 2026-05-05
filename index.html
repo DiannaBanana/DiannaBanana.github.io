@@ -1,143 +1,302 @@
-<!DOCTYPE HTML>
-<!--
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>About me - Dianna Borinaga</title>
-		<link rel = "icon" href = "https://images.vexels.com/media/users/3/157959/isolated/preview/7bd2059c90732213553a36462d9db90d-earth-doodle-icon-by-vexels.png" type = "image/x-icon"> 
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFK</title>
+    <style>
+        :root {
+            --bg: #121820;          /* Deep Midnight Blue */
+            --burnt-orange: #c85a32;/* Autumn Copper */
+            --forest-green: #2d5a27;/* Moody Jade */
+            --mustard: #d4a342;     /* Vintage Gold */
+            --cream: #e6dfd3;       /* Aged Parchment */
+        }
 
-		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-					<h1>
-						Hi! I'm <strong>Dianna</strong>, a Fourth Year Computer Science student at the
-						University of Victoria. I'm set to graduate in April 2022 <br />
-					</h1>
-					<br />
-					<p>
-						Currently, I am working as an Embedded Systems Engineering Intern at
-						<a href="https://auroraim.ca"><span class="label">Aurora Industrial Machines</span></a>, 
-						developing internal tools and systems for their IoT Infrastructure and control systems. 
-					</p>
-					<p>
-						In my free time, I like to go hiking or to the beach, play soccer with friends,
-						game a little 😉 and listen to music. I also started playing with Unity recently!
-					</p>
-				</div>
-			</header>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<!-- Main -->
-			<div id="main">
-				<h1>Recent Projects</h1>
-						<div class="row">
-						<article class="col-6 col-12-xsmall work-item">
-							<a
-							href="https://github.com/DockDockGoose/Project"
-							class="image fit thumb"
-							><img src="images/Stocks.gif" alt=""
-							/></a>
-							<h3>Day-Trading Distrbuted System</h3>
-							<p>
-							My team and I were contracted by DayTrading Inc. (a secret organization) to develop a prototype end-to-end solution to support their day trading clients and services.
-							</p>   
-							<br/>
-							<p>
-							So.. We are currently designing and implementing an online day-trading website to demonstrate software scalability techniques for up to 1500 concurrent users. 
-							The distributed backend is powered by Python, Docker Swarm, Redis, Django, Gunicorn and Nginx. 
-							We are using the Django REST Framework to develop the API and Djongo Engine to map SQL queries into a NoSQL MongoDB sharded cluster.
-							</p>   
-							</article>
-						<article class="col-6 col-12-xsmall work-item">
-							<a
-							href="https://github.com/DiannaBanana/SENG330-WhaleWatchersApp"
-							class="image fit thumb"
-							><img src="images/Humpback.gif" alt=""
-							/></a>
-							<h3>Whale Watchers</h3>
-							<p>
-							Whales are beautiful and mysterious creatures and they frequently travel thousands of kilometers, making it difficult for scientists, researchers, and obesrvers to monitor the health and sightings of whales.
-							</p>
-							</br>
-							<p>              
-							In order to combat this challenge, we developed a CRUD web application and API hosted on Heroku to support whale observations using the Play Framework, JUnit, HTML and CSS.
-							</p>
-							</br>
-							<p>  
-							Check out our  <a href="https://whale-watcher-330.herokuapp.com/"><span class="label">Whale Watchers website!</span></a>       
-							</p>
-						</article>
-						<article class="col-6 col-12-xsmall work-item">
-							<a
-							href="https://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w49/Qiu_Image_Generation_Associated_CVPR_2018_paper.pdf"
-							class="image fit thumb"
-							><img src="images/Music-Chill.gif" alt=""
-							/></a>
-							<h3>Music to Image Generation</h3>
-							<p>
-							The visual aspects of listening to music have become an increasingly vital part of how we consume the medium. We do not simply “listen” to music anymore, we also “watch” it.
-							Image generation is trying to address this area of “watching” music. Based off features of music, related images can be provided to any track someone listens to.
-							</p>
-							<br/>
-							<p>
-							My team and I seeked to research and expand this work on Image Generation and developed a Python program that automatically generates images from music data. 
-							We used STFT, DCGAN, CNN, and LSTM as a neural network pipeline to learn correlations between genres of music and categorical images. 
-							We also leveraged pre-processing techniques such as MFCC's and dimensionality reduction algorithms such as tSNE to correctly train models.
-							</p>         
-							<br/>   
-							<p>
-							We learned a lot during the journey of this project!
-							</p>
-						</article>
-						</div>
-						<ul class="actions">
-						<li>
-							<a href="assets/DiannaBorinaga-Resume2021.pdf" class="button">View My Resume</a>
-						</li>
-						</ul>
-					</section>
-			</div>
+        body {
+            background-color: var(--bg);
+            color: var(--cream);
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
 
-		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<ul class="icons">
-						<li>
-							<a
-							href="https://www.linkedin.com/in/dborinaga/"
-							class="icon brands fa-linkedin"
-							><span class="label">Linkedin</span></a
-							>
-						</li>
-						<li>
-							<a href="https://github.com/DiannaBanana" class="icon brands fa-github"
-							><span class="label">Github</span></a
-							>
-						</li>
-						<li>
-							<a href="mailto:dborinaga@uvic.ca" class="icon solid fa-envelope"><span class="label">Email</span></a
-							>
-						</li>
-						</ul>
-						Design: <a href="http://html5up.net/"><span class="label">HTML5 UP</span></a> 
-					</div>
-			</footer>
+        /* Weird Impossible Geometry Scene */
+        .scenery {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .shape {
+            position: absolute;
+            animation: float 10s infinite ease-in-out;
+            border-radius: 4px; /* Default slightly rounded corners */
+        }
 
-	</body>
+        /* ---- ARCHITECTURAL SHAPES ---- */
+
+        /* Giant Monolithic Step Tower */
+        .monolith {
+            width: 180px;
+            height: 380px;
+            background: linear-gradient(135deg, var(--forest-green) 30%, #1e3d1a);
+            bottom: -5%;
+            right: 8%;
+            clip-path: polygon(0% 100%, 0% 30%, 40% 30%, 40% 15%, 70% 15%, 70% 0%, 100% 0%, 100% 100%);
+            opacity: 0.45;
+            transform: rotate(-5deg);
+        }
+
+        /* Oversized Floating Archway fragment */
+        .archway {
+            width: 280px;
+            height: 240px;
+            background: var(--burnt-orange);
+            top: -5%;
+            left: -5%;
+            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 75% 100%, 75% 40%, 25% 40%, 25% 100%, 0% 100%);
+            opacity: 0.6;
+            transform: rotate(15deg);
+            animation-delay: -3s;
+        }
+
+        /* Elongated Golden Needle / Spire */
+        .spire {
+            width: 30px;
+            height: 450px;
+            background: var(--mustard);
+            bottom: 10%;
+            left: 18%;
+            clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+            opacity: 0.35;
+            transform: rotate(-25deg);
+            animation-delay: -6s;
+        }
+
+        /* Impossible Floating Wedge */
+        .wedge {
+            width: 140px;
+            height: 140px;
+            background: var(--burnt-orange);
+            top: 40%;
+            right: 15%;
+            clip-path: polygon(100% 0%, 0% 50%, 100% 100%);
+            opacity: 0.5;
+            transform: rotate(45deg);
+            animation-delay: -1.5s;
+        }
+
+        /* Giant inverted hollow triangle */
+        .portal {
+            width: 320px;
+            height: 320px;
+            background: var(--forest-green);
+            bottom: -10%;
+            left: -5%;
+            clip-path: polygon(50% 100%, 0% 0%, 100% 0%, 50% 100%, 50% 75%, 75% 20%, 25% 20%, 50% 75%);
+            opacity: 0.4;
+            transform: rotate(12deg);
+            animation-delay: -4s;
+        }
+
+        /* Floating staggered zig-zag step fragment */
+        .steps {
+            width: 150px;
+            height: 90px;
+            background: var(--mustard);
+            top: 15%;
+            right: 25%;
+            clip-path: polygon(0% 100%, 0% 66%, 33% 66%, 33% 33%, 66% 33%, 66% 0%, 100% 0%, 100% 33%, 66% 33%, 66% 66%, 33% 66%, 33% 100%);
+            opacity: 0.55;
+            transform: rotate(-15deg);
+            animation-delay: -7.5s;
+        }
+
+        /* Long abstract beam slicing through the backdrop */
+        .beam {
+            width: 500px;
+            height: 25px;
+            background: linear-gradient(90deg, transparent, var(--burnt-orange), transparent);
+            top: 65%;
+            left: -10%;
+            transform: rotate(-35deg);
+            opacity: 0.3;
+            animation-delay: -2s;
+        }
+
+        /* Small floating geometric peak near the text */
+        .shard {
+            width: 60px;
+            height: 90px;
+            background: var(--cream);
+            top: 30%;
+            left: 45%;
+            clip-path: polygon(50% 0%, 100% 100%, 30% 100%);
+            opacity: 0.15;
+            transform: rotate(20deg);
+            animation-delay: -5s;
+        }
+
+        /* ---- CIRCULAR/BLOBBY LAYER ---- */
+
+        /* Original blurred out circle (Top Right) */
+        .sphere-right {
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle at 30% 30%, rgba(200, 90, 50, 0.4), transparent 80%);
+            border-radius: 50%;
+            top: 10%;
+            right: -5%;
+            opacity: 0.3;
+            filter: blur(15px);
+            animation: float 12s infinite ease-in-out;
+            animation-delay: -1s;
+        }
+
+        /* New similar blurred circle (Top Left-Center) */
+        .sphere-left {
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle at 70% 70%, rgba(200, 90, 50, 0.4), transparent 80%);
+            border-radius: 50%;
+            top: 5%;
+            left: 15%;
+            opacity: 0.25;
+            filter: blur(12px);
+            animation: float 13s infinite ease-in-out;
+            animation-delay: -3s; /* Desync the animation */
+        }
+
+        /* Irregular blob shape */
+        .blob-1 {
+            width: 250px;
+            height: 200px;
+            background: rgba(45, 90, 39, 0.5); /* Semi-trans forest green */
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            top: 55%;
+            left: 20%;
+            opacity: 0.4;
+            animation: float 11s infinite ease-in-out;
+            animation-delay: -4.5s;
+        }
+
+        /* Small abstract ring/torus fragment */
+        .ring {
+            width: 100px;
+            height: 100px;
+            border: 15px solid var(--mustard);
+            border-radius: 50%;
+            bottom: 25%;
+            left: 40%;
+            opacity: 0.25;
+            clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);
+            transform: rotate(30deg);
+            animation-delay: -8s;
+        }
+
+        /* Small clustered oval blobs */
+        .blob-cluster {
+            width: 60px;
+            height: 60px;
+            background: var(--cream);
+            border-radius: 50%;
+            opacity: 0.1;
+            top: 70%;
+            right: 35%;
+            box-shadow: -40px 10px 0 5px rgba(230, 223, 211, 0.05),
+                        30px -20px 0 -5px rgba(230, 223, 211, 0.08);
+            animation-delay: -2.5s;
+        }
+
+        /* Medium blob over dynamic geometric shape */
+        .blob-2 {
+            width: 180px;
+            height: 150px;
+            background: rgba(212, 163, 66, 0.6); /* Semi-trans mustard */
+            border-radius: 70% 30% 50% 50% / 30% 60% 40% 70%;
+            top: -10%;
+            right: 40%;
+            opacity: 0.45;
+            animation: float 10.5s infinite ease-in-out;
+            animation-delay: -6s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(var(--r, 0deg)); }
+            50% { transform: translateY(-30px) rotate(calc(var(--r, 0deg) + 3deg)); }
+        }
+
+        /* Rotation base for geometric shapes */
+        .monolith { --r: -5deg; }
+        .archway { --r: 15deg; }
+        .spire { --r: -25deg; }
+        .wedge { --r: 45deg; }
+        .portal { --r: 12deg; }
+        .steps { --r: -15deg; }
+        .beam { --r: -35deg; }
+        .shard { --r: 20deg; }
+        .ring { --r: 30deg; }
+
+        main {
+            text-align: center;
+            z-index: 1;
+            user-select: none;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 12vw, 6rem);
+            font-weight: normal;
+            font-style: italic;
+            letter-spacing: -2px;
+            line-height: 1;
+            margin-bottom: 0.6rem;
+            text-shadow: 0 0 40px rgba(18, 24, 32, 0.9);
+        }
+
+        p {
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 1.1rem;
+            color: var(--cream);
+            opacity: 0.7;
+            letter-spacing: 3px;
+            text-transform: lowercase;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scenery">
+        <div class="shape monolith"></div>
+        <div class="shape archway"></div>
+        <div class="shape spire"></div>
+        <div class="shape wedge"></div>
+        <div class="shape portal"></div>
+        <div class="shape steps"></div>
+        <div class="shape beam"></div>
+        <div class="shape shard"></div>
+        
+        <div class="shape sphere-right"></div>
+        <div class="shape sphere-left"></div> <div class="shape blob-1"></div>
+        <div class="shape ring"></div>
+        <div class="shape blob-cluster"></div>
+        <div class="shape blob-2"></div>
+    </div>
+
+    <main>
+        <h1>afk...</h1>
+        <p>site brewing 🫧</p>
+    </main>
+
+</body>
 </html>
